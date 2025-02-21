@@ -30,6 +30,7 @@ AS_IF([test "x$enable_debug" = xyes],
       [CFLAGS="$opt_CFLAGS"])
 
 AC_DEFINE(_FILE_OFFSET_BITS, 64)
+AC_DEFINE(_POSIX_C_SOURCE, 200809L)
 AC_DEFINE(_POSIX_SOURCE) # needed for fileno
 
 AC_PROG_LIBTOOL
